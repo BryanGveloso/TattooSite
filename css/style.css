@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+@font-face {
+    font-family: Bright Summer;
+    src: url(../fonts/BrightSummer.ttf);
+}
+
+.navbar {
+    background-color: black;
+}
+
+.navbar a {
+    font-family: 'JetBrains Mono', sans-serif;
+    color: #e5e5e5;
+}
+
+.nav-item {
+    margin-left: 10px;
+}
+
+.nav-link:hover {
+    color: #FFE500;
+}
+
+.home-page {
+    background-color: black;
+}
+
+.titulo {
+    letter-spacing: 4px;
+    font-size: 80px;
+    font-family: 'Bright Summer', sans-serif;
+    color: #e5e5e5;
+}
+
+.subname {
+    color: #FFE500;
+}
+
+.readmore {
+    border-radius: 40px;
+    font-weight: 100;
+    padding: 15px 60px;
+    color: #FFE500;
+    border: #FFE500 2px solid;
+    background-color: black;
+    font-size: 20px;
+    font-family: 'JetBrains Mono', sans-serif;
+    filter: drop-shadow(1px 1px 5px #FFE500);
+}
+
+.readmore:hover {
+    font-weight: 800;
+    border: none;
+    color: black;
+    background-color: #FFE500;
+}
+
+.subheading {
+    font-weight: 200;
+    font-size: 15px;
+    font-family: 'JetBrains Mono', sans-serif;
+}
+
+.subtexto {
+    letter-spacing: 2px;
+}
+
+.linha-divide {
+    width: 100%;
+}
+
+#menu {
+    align-items: end;
+}
+
+.line {
+    height: 2px;
+    background-color: rgb(49, 49, 49);
+}
+
+/*----------- SEGUNDA PARTE---------------*/
+
+.about-me-page {
+    background-color: black;
+}
+
+.line-under {
+    border-radius: 1px;
+    width: 20em;
+    height: 2px;
+    background-color: #e5e5e5;
+}
+
+.container-about-me {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.text-subheading {
+    font-weight: 200;
+    font-size: 20px;
+    font-family: 'JetBrains Mono', sans-serif;
+}
+
+.vitin-redondo-img {
+    width: 120%;
+    margin-bottom: 10em;
+}
+
+.vitin-img {
+    margin-top: 1em;
+    width: 90%;
+}
+
+
+/*---------Portifolio------------*/
+
+.potifolio-sec {
+    display: flex;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/Bg-MACAL.png);
+    background-color: black;
+}
+
+.portifolio-page {
+    height: 100vh;
+    width: 100%;
+}
+
+.container-portifolio {
+    display: flex;
+    transition: transform 0.5 ease-in-out;
+    transform: translateX(0);
+}
+
+.carrossel {
+    background-color: black;
+    box-shadow: 2px 2px 4px #FFE500;
+    border-radius: 5rem;
+    overflow: hidden;
+    width: 400px;
+    height: 500px;
+}
+
+.carrossel .container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    align-items: center;
+    transform: translateX(0);
+}
+
+.carrossel .container img {
+    object-fit: cover;
+    width: 400px;
+    height: 500px;
+}
+
+
+
+.portifolio-section {
+    display: flex;
+    padding-top: 5rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.text-portifolio{
+    font-family: 'JetBrains Mono', sans-serif;
+    font-size: 2rem;
+}
+
+
+
+
+
+
+/*------------- MOBILE -------------------*/
+@media screen and (max-width: 1229px) {
+    #tattoo {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 866px) {
+    #textIni {
+        width: 100%;
+    }
+
+    #tattoo {
+        width: 15rem;
+    }
+
+    .titulo {
+        padding-top: 60px;
+        font-size: 50px;
+    }
+
+    .linha-reader {
+        width: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #tattoo {
+        width: 0;
+    }
+}
